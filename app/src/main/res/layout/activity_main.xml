@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_column="0"
+            app:layout_row="0"
+            android:background="@color/rojo">
+            <androidx.gridlayout.widget.GridLayout
+
+                android:id="@+id/migrid"
+                android:layout_width="match_parent"
+                android:layout_height="375dp"
+                tools:layout_editor_absoluteX="0dp"
+                app:rowCount="8"
+                app:columnCount="3"
+                android:paddingRight="10px"
+
+
+
+
+                tools:layout_editor_absoluteY="0dp" >
+
+
+            </androidx.gridlayout.widget.GridLayout>
+
+
+            <Button
+                android:id="@+id/botonactividad"
+                android:layout_below="@id/migrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Crear una cuenta"
+                app:layout_column="0"
+                app:layout_row="0" />
+
+        </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
